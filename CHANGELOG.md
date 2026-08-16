@@ -2,6 +2,10 @@
 
 All notable changes are documented here.
 
+## [0.1.5] - 2026-08-16
+
+- Correct installation documentation to use the published GitHub source rather than an unpublished npm package.
+
 ## [0.1.4] - 2026-08-16
 
 - Update checkout and Node setup actions to their current major versions.

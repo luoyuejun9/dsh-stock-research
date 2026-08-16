@@ -13,16 +13,19 @@
 - 只做日线/收盘后研究，不声称提供实时行情。
 - 跨市场比较只比较百分比和估值倍数，绝对金额保持原始币种。
 
-## 安装与配置
+## 从 GitHub 安装与配置
 
 ```bash
-dsh plugin --profile web add dsh-stock-research@0.1.0
+git clone https://github.com/luoyuejun9/dsh-stock-research.git
+cd dsh-stock-research
+npm ci
+dsh plugin --profile web add .
 
 export TUSHARE_TOKEN="你的 Token"
 export ALPHAVANTAGE_API_KEY="你的 Key" # 可选备用
 ```
 
-执行 `/stock doctor` 检查配置。密钥只从运行环境读取，不会写进缓存、日志、测试或 npm 包。
+项目当前通过 GitHub Release 发布，npm 发布不会自动执行。执行 `/stock doctor` 检查配置。密钥只从运行环境读取，不会写进缓存、日志、测试或 npm 包。
 
 ## 使用示例
 

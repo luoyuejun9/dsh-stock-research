@@ -17,13 +17,7 @@ Evidence-backed, end-of-day equity research for [DeepSeek Harness](https://githu
 - Emits source endpoint, fetch timestamp, market, native currency, coverage status, and missing-data reasons with every packet.
 - Caches non-secret provider responses under `.dsh/stock-research/cache/`; credentials are never written to disk or logs.
 
-## Install
-
-```bash
-dsh plugin --profile web add dsh-stock-research@0.1.0
-```
-
-For local development:
+## Install from GitHub
 
 ```bash
 git clone https://github.com/luoyuejun9/dsh-stock-research.git
@@ -33,6 +27,8 @@ dsh plugin --profile web add .
 ```
 
 The first release is pinned to DeepSeek Harness `0.1.0-rc.6` and Node.js `>=22.19`.
+
+The project is released on GitHub; npm publication is intentionally not automated.
 
 ## Configure data sources
 
