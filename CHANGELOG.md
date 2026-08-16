@@ -2,6 +2,10 @@
 
 All notable changes are documented here.
 
+## [0.1.3] - 2026-08-16
+
+- Upgrade the GitHub secret-scanning action to its current Node 24-compatible major version.
+
 ## [0.1.2] - 2026-08-16
 
 - Fetch complete Git history before CI secret scanning so the scan covers the intended commit range.
