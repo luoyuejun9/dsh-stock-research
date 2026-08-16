@@ -2,6 +2,10 @@
 
 All notable changes are documented here.
 
+## [0.1.4] - 2026-08-16
+
+- Update checkout and Node setup actions to their current major versions.
+
 ## [0.1.3] - 2026-08-16
 
 - Upgrade the GitHub secret-scanning action to its current Node 24-compatible major version.
