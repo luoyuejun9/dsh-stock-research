@@ -1,6 +1,6 @@
 {
   "name": "dsh-stock-research",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Evidence-backed end-of-day stock research for DeepSeek Harness",
   "type": "module",
   "main": "./lib/index.js",
