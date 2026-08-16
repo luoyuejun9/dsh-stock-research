@@ -1,0 +1,4 @@
+# Insert dsh-stock-research into a DeepSeek Harness profile.
+- insert:
+    - id: stock-research
+      name: dsh-stock-research

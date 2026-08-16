@@ -1,0 +1,25 @@
+name: Bug report
+description: Report a reproducible plugin issue (not a credential exposure)
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include API keys, full provider responses, account IDs, or personal portfolio data. For security issues, use private vulnerability reporting."
+  - type: input
+    id: version
+    attributes:
+      label: Plugin and DSH version
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Sanitized command and expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and sanitized output
+    validations:
+      required: true

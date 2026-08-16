@@ -1,0 +1,49 @@
+{
+  "name": "dsh-stock-research",
+  "version": "0.1.0",
+  "description": "Evidence-backed end-of-day stock research for DeepSeek Harness",
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": { "types": "./lib/index.d.ts", "default": "./lib/index.js" },
+    "./schema": "./schemas/research-packet-v1alpha1.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib/**/*.js", "lib/**/*.d.ts", "schemas/*.json", "cordis.patch.yml", "README.md", "README.zh-CN.md", "LICENSE", "SECURITY.md"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm test && npm run build",
+    "pack:check": "npm pack --dry-run"
+  },
+  "engines": { "node": ">=22.19" },
+  "keywords": ["deepseek-harness", "dsh", "stock-research", "tushare", "alpha-vantage", "finance"],
+  "license": "MIT",
+  "publishConfig": { "access": "public" },
+  "repository": { "type": "git", "url": "git+https://github.com/luoyuejun9/dsh-stock-research.git" },
+  "bugs": { "url": "https://github.com/luoyuejun9/dsh-stock-research/issues" },
+  "homepage": "https://github.com/luoyuejun9/dsh-stock-research#readme",
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "4.0.1",
+    "@deepseek-ai/dsh-agent": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-commands": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-llm": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-tools": "0.1.0-rc.6",
+    "@deepseek-ai/schemastery": "3.18.1"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "4.0.1",
+    "@deepseek-ai/dsh-agent": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-commands": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-llm": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-tools": "0.1.0-rc.6",
+    "@deepseek-ai/schemastery": "3.18.1",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0"
+  }
+}

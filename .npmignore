@@ -1,0 +1,7 @@
+.github/
+docs/
+test/
+src/
+vitest.config.ts
+tsconfig.json
+.env.example

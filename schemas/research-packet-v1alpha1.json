@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/luoyuejun9/dsh-stock-research/schemas/research-packet-v1alpha1.json",
+  "title": "DSH Stock Research Packet",
+  "type": "object",
+  "required": ["apiVersion", "generatedAt", "identity", "prices", "financials", "events", "derived", "coverage", "gaps", "evidence", "disclaimer"],
+  "properties": {
+    "apiVersion": { "const": "dsh.stock-research/v1alpha1" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "coverage": { "enum": ["complete", "partial", "unavailable"] },
+    "identity": { "type": "object", "required": ["symbol", "market", "exchange", "currency"] },
+    "prices": { "type": "array" },
+    "financials": { "type": "array" },
+    "events": { "type": "array" },
+    "derived": { "type": "object" },
+    "gaps": { "type": "array" },
+    "evidence": { "type": "array" },
+    "disclaimer": { "type": "string" }
+  }
+}
