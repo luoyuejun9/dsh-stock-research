@@ -28,6 +28,6 @@ jobs:
           npm pack --json > pack.json
           node -e 'const fs=require("fs"); const p=JSON.parse(fs.readFileSync("pack.json"))[0].filename; const {execFileSync}=require("child_process"); const out=execFileSync("tar",["-tf",p],{encoding:"utf8"}); if(/(^|\/)(\.env|node_modules)(\/|$)/m.test(out)) process.exit(1)'
       - name: Secret scan
-        uses: gitleaks/gitleaks-action@v2
+        uses: gitleaks/gitleaks-action@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
