@@ -32,7 +32,7 @@
     "@deepseek-ai/dsh-agent": "0.1.0-rc.6",
     "@deepseek-ai/dsh-commands": "0.1.0-rc.6",
     "@deepseek-ai/dsh-llm": "0.1.0-rc.6",
-    "@deepseek-ai/dsh-tools": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-tools": "0.1.0-rc.8",
     "@deepseek-ai/schemastery": "3.18.1"
   },
   "devDependencies": {
@@ -40,7 +40,7 @@
     "@deepseek-ai/dsh-agent": "0.1.0-rc.6",
     "@deepseek-ai/dsh-commands": "0.1.0-rc.6",
     "@deepseek-ai/dsh-llm": "0.1.0-rc.6",
-    "@deepseek-ai/dsh-tools": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-tools": "0.1.0-rc.8",
     "@deepseek-ai/schemastery": "3.18.1",
     "@types/node": "^24.0.0",
     "typescript": "^5.9.0",
